@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<meta charset="UTF-8">
+    	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    	<script src="./src/vote.js" defer></script>
+    	<title>C2_Progressbar</title>
+	</head>
+	<form name="myForm" class="form form-check" action="" method="POST">
+		<fieldset class="d-flex justify-content-start">
+            <legend>Выберите свой вариант</legend>
+            <label for="variant-1">Cats</label>
+            <input class="mr-5" type="radio" id="button1" name="animal" value="cats">
+
+            <label for="variant-2">Dogs</label>
+            <input class="mr-5" type="radio" id="button2" name="animal" value="dogs">
+
+            <label for="variant-3">Parrots</label>
+            <input class="mr-5" type="radio" id="button3" name="animal" value="parrots">
+
+        </fieldset>
+<button type="button">Проголосовать</button>
+	    
+	</form>
+	<div class="alert alert-success hidden" style="display: none;" role="alert">
+  <p>Спасибо, Ваш голос учтён!</p>
+
+	    <a href="./vote_result.html">Просмотр результатов</a>	  
+	    </div> 
