@@ -11,7 +11,8 @@
  	 
  	    submit.onclick = () => {
  	      let xhr = new XMLHttpRequest();
- 	      xhr.open('POST', url);
+	      xhr.setRequestHeader('Content-type', 'application/json');
+	      xhr.open('POST', url);
  	      xhr.send();
 
 	    xhr.onload = function() {
