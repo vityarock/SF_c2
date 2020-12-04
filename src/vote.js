@@ -11,9 +11,9 @@
  	 
  	    submit.onclick = () => {
  	      let xhr = new XMLHttpRequest();
-	      xhr.setRequestHeader('Content-type', 'application/json');
 	      xhr.open('POST', url);
- 	      xhr.send();
+ 	      xhr.setRequestHeader('Content-type', 'application/json');
+	      xhr.send();
 
 	    xhr.onload = function() {
 	      if (xhr.status != 200) { // анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
