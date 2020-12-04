@@ -3,7 +3,8 @@ const progress2 = document.querySelector('.progress-bar2')
 const progress3 = document.querySelector('.progress-bar3')
 const header = new Headers({
     'Access-Control-Allow-Credentials': true,
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': POST, GET
 })
 
 const url = new URL('https://sf-pyw.mosyag.in/sse/vote/stats')
